@@ -1,0 +1,4 @@
+select product.status,cart.color_id,cart.size_id from save_later
+INNER JOIN product ON product.id = save_later.product_id
+INNER JOIN cart ON cart.id = save_later.cart_id
+WHERE save_later.product_id = 1 AND save_later.cart_id = 176
